@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + CSS + JS</title>
+    <style>
+      body {
+        background-color: white;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 20px;
+        box-shadow: rgba(0, 0, 0, 2.4) 0px 3px 8px;
+        background-color: lightcoral;
+        padding: 40px;
+        margin: auto;
+        width: 80%;
+        border-radius: 20px;
+      }
+      #container > div {
+        background-color: teal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 20px;
+      }
+      #container > div:hover {
+        background-color: red;
+        cursor: pointer;
+      }
+      #enter,
+      #shift {
+        grid-column: 11 / span 2;
+      }
+      #space {
+        grid-column: 5 / span 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>0</div>
+    </div>
+  </body>
+</html>
